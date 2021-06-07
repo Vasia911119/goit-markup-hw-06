@@ -116,10 +116,6 @@ svg {
 .section {
   padding: 94px 0;
 }
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .section-title {
   margin-bottom: 50px;
 
@@ -446,6 +442,10 @@ svg {
 }
 /* -- ‡ FEATURES -- */
 /* -- EXAMPLES OF WORKS -- */
+.examples {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .example.list {
   display: flex;
   flex-wrap: wrap;
@@ -482,11 +482,6 @@ svg {
 }
 /* -- ‡ EXAMPLES OF WORKS -- */
 /* -- TEAM -- */
-.section.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-bottom: 0;
-}
 .team {
   background-color: var(--third-background-color);
 }
