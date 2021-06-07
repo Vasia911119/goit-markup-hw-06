@@ -3,20 +3,11 @@
   --accent-color: #2196f3;
   --card-set-gap: 30px;
   --timing-func: cubic-bezier(0.4, 0, 0.2, 1);
-  /* -- VARIABLES TEXT COLOR -- */
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --secondary-text-color: #ffffff;
-  --contacts-footer-text-color: rgba(255, 255, 255, 0.6);
-  --logo-part-header-color: #000000;
-  /* -- ‡ VARIABLES TEXT COLOR -- */
-  /* -- VARIABLES BACKGROUND COLOR -- */
-  --primary-background-color: #ffffff;
-  --secondary-background-color: #2f303a;
-  --third-background-color: #f5f4fa;
-  --button-hero-accent-background-color: #188ce8;
-  --icons-bacground-footer: rgba(255, 255, 255, 0.1);
-  /* -- ‡ VARIABLES BACKGROUND COLOR -- */
+  /* -- VARIABLES  BORDER -- */
+  --border-bottom-color: #ececec;
+  --icons-border-color: #afb1b8;
+  --portfolio-description-border: #eeeeee;
+  /* -- ‡ VARIABLES  BORDER -- */
   /* -- VARIABLES  SHADOW -- */
   --shadow-team-card: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -26,11 +17,20 @@
   --shadow-portfolio-item: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   /* -- ‡ VARIABLES  SHADOW -- */
-  /* -- VARIABLES  BORDER -- */
-  --border-bottom-color: #ececec;
-  --icons-border-color: #afb1b8;
-  --portfolio-description-border: #eeeeee;
-  /* -- ‡ VARIABLES  BORDER -- */
+  /* -- VARIABLES BACKGROUND COLOR -- */
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
+  --button-hero-accent-background-color: #188ce8;
+  --icons-bacground-footer: rgba(255, 255, 255, 0.1);
+  /* -- ‡ VARIABLES BACKGROUND COLOR -- */
+  /* -- VARIABLES TEXT COLOR -- */
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --contacts-footer-text-color: rgba(255, 255, 255, 0.6);
+  --logo-part-header-color: #000000;
+  /* -- ‡ VARIABLES TEXT COLOR -- */
 }
 /* -- ‡ VARIABLES -- */
 /* -- TEST BORDERS -- */
@@ -104,8 +104,9 @@ svg {
 }
 .link,
 .link-footer {
-  text-decoration: none;
   color: inherit;
+
+  text-decoration: none;
 }
 .container {
   width: 1200px;
@@ -121,7 +122,9 @@ svg {
 }
 .section-title {
   margin-bottom: 50px;
+
   color: var(--title-text-color);
+
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -155,13 +158,15 @@ svg {
 /* -- SITE LOGO -- */
 .logo {
   margin-right: 93px;
+
   color: var(--accent-color);
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .logo-part-header {
   color: var(--logo-part-header-color);
@@ -173,16 +178,20 @@ svg {
 /* -- BUTTONS -- */
 .button-hero {
   padding: 10px 32px;
+
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
   border-radius: 4px;
   border: none;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   box-shadow: 0px 4px 4px var(--shadow-hero-button);
   cursor: pointer;
+
   transition: background-color 250ms var(--timing-func);
 }
 .button-hero:hover,
@@ -192,19 +201,23 @@ svg {
 .buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
   flex-wrap: wrap;
+
+  margin-bottom: 50px;
 }
 .button {
   padding: 6px 22px;
+
+  background-color: var(--third-background-color);
+  color: var(--title-text-color);
   border-radius: 4px;
   border: none;
-  color: var(--title-text-color);
-  background-color: var(--third-background-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+
   transition: color 250ms var(--timing-func),
     background-color 250ms var(--timing-func),
     box-shadow 250ms var(--timing-func);
@@ -227,8 +240,9 @@ svg {
 .main-nav {
   display: flex;
   align-items: center;
-  line-height: 1.17;
   flex-wrap: wrap;
+
+  line-height: 1.17;
 }
 .site-nav {
   display: flex;
@@ -244,8 +258,10 @@ svg {
   padding-bottom: 32px;
 
   color: var(--title-text-color);
+
   font-weight: 500;
   letter-spacing: 0.02em;
+
   transition: color 250ms var(--timing-func);
 }
 .site-nav .link:hover,
@@ -254,6 +270,7 @@ svg {
 }
 .site-nav .link.current {
   position: relative;
+
   color: var(--accent-color);
 }
 .link.current:after {
@@ -272,9 +289,10 @@ svg {
 /* -- CONTACTS -- */
 .main-nav .contacts {
   display: flex;
-  margin-left: auto;
   align-items: center;
   flex-wrap: wrap;
+
+  margin-left: auto;
 }
 .header-contact {
   display: flex;
@@ -282,8 +300,10 @@ svg {
   flex-wrap: wrap;
 }
 .nav-icon {
-  fill: currentColor;
   margin-right: 10px;
+
+  fill: currentColor;
+
   transition: fill 250ms var(--timing-func);
 }
 .nav-icon:hover {
@@ -292,8 +312,10 @@ svg {
 .contacts .link {
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   letter-spacing: 0.02em;
+
   transition: color 250ms var(--timing-func);
 }
 .contacts .link:hover,
@@ -304,30 +326,33 @@ svg {
 /* -- ‡ HEADER -- */
 /* -- HERO -- */
 .hero {
-  text-align: center;
   max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-background-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: var(--secondary-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+
+  text-align: center;
 }
 .hero-title {
+  width: 696px;
   margin-right: auto;
   margin-bottom: var(--card-set-gap);
   margin-left: auto;
-  width: 696px;
 
   color: var(--secondary-text-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -347,7 +372,9 @@ svg {
   width: 100%;
   height: 100%;
   z-index: 100;
+
   background-color: rgba(0, 0, 0, 0.2);
+
   transition: opacity 250ms var(--timing-func),
     visibility 250ms var(--timing-func);
 }
@@ -366,15 +393,15 @@ svg {
   border-radius: 4px;
 }
 .hero-modal-close {
-  background: var(--primary-background-color);
   position: absolute;
   top: 8px;
   right: 8px;
   width: var(--card-set-gap);
   height: var(--card-set-gap);
-  border-radius: 50%;
 
+  background: var(--primary-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 
   cursor: pointer;
 }
@@ -390,25 +417,30 @@ svg {
 .feature.list {
   display: flex;
   flex-wrap: wrap;
+
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .feature .item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
+
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
 .feature-icon {
-  background: var(--third-background-color);
-  border-radius: 4px;
   width: 270px;
   padding: 25px 100px;
   margin-bottom: var(--card-set-gap);
+
+  background: var(--third-background-color);
+  border-radius: 4px;
 }
 .feature .title {
   margin-bottom: 10px;
-  font-size: 14px;
+
   color: var(--title-text-color);
+
+  font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
 }
@@ -417,30 +449,36 @@ svg {
 .example.list {
   display: flex;
   flex-wrap: wrap;
+
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .example .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
   position: relative;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+
+  margin-top: var(--card-set-gap);
   margin-bottom: 94px;
+  margin-left: var(--card-set-gap);
 }
 .example-description {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  padding: 27px 82px;
+  margin: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--secondary-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  margin: 0;
-  padding: 27px 82px;
 }
 /* -- ‡ EXAMPLES OF WORKS -- */
 /* -- TEAM -- */
@@ -455,27 +493,32 @@ svg {
 .our-team {
   display: flex;
   flex-wrap: wrap;
+
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .our-team .item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
+  overflow: hidden;
+
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+
   background-color: var(--primary-background-color);
   box-shadow: var(--shadow-team-card);
   border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
 }
 .team-info {
-  text-align: center;
   padding: var(--card-set-gap);
+
+  text-align: center;
 }
 .our-team .title {
   margin-top: 0;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -483,6 +526,7 @@ svg {
 }
 .our-team .profession {
   margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -495,6 +539,7 @@ svg {
 .icon-team-item {
   background-color: var(--primary-background-color);
   fill: var(--icons-border-color);
+
   transition: background-color 250ms var(--timing-func),
     fill 250ms var(--timing-func);
 }
@@ -507,8 +552,9 @@ svg {
 /* -- REGULAR CLIENTS -- */
 .client-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
@@ -517,6 +563,7 @@ svg {
   justify-content: center;
   flex-basis: calc(100% / 6 - var(--card-set-gap));
   height: 92px;
+
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
@@ -526,23 +573,27 @@ svg {
   align-items: center;
   width: 100%;
   height: 100%;
+
+  fill: var(--icons-border-color);
   border: 1px solid var(--icons-border-color);
   border-radius: 4px;
-  fill: var(--icons-border-color);
+
   transition: border-color 250ms var(--timing-func),
     fill 250ms var(--timing-func);
 }
 .client-link:hover,
 .client-link:focus {
-  border-color: var(--accent-color);
   fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 /* -- ‡ REGULAR CLIENTS -- */
 /* -- PORTFOLIO -- */
 .portfolio .title {
   margin-top: 0;
   margin-bottom: 4px;
+
   color: var(--title-text-color);
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -550,14 +601,17 @@ svg {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .portfolio.list .item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
+  overflow: hidden;
+
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
-  overflow: hidden;
+
   transition: box-shadow 250ms var(--timing-func);
 }
 .portfolio .item:hover,
@@ -572,17 +626,21 @@ svg {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: auto;
-  transform: translatey(100%);
-  transition: transform 250ms var(--timing-func);
-  padding: 63px 24px;
   width: 100%;
   height: 100%;
+  overflow: auto;
+  transform: translatey(100%);
+
+  padding: 63px 24px;
+
   background-color: rgba(33, 150, 243, 0.9);
+  color: var(--secondary-text-color);
+
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+
+  transition: transform 250ms var(--timing-func);
 }
 .portfolio .link:hover .portfolio-about,
 .portfolio .link:focus .portfolio-about {
@@ -590,6 +648,7 @@ svg {
 }
 .portfolio .description {
   padding: 20px 24px;
+
   border: 1px solid var(--portfolio-description-border);
   border-top: none;
 }
@@ -600,9 +659,10 @@ svg {
 /* -- ‡ PORTFOLIO -- */
 /* -- FOOTER -- */
 .footer {
-  background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--secondary-background-color);
 }
 .footer-elements {
   display: flex;
@@ -617,7 +677,9 @@ svg {
 }
 .footer .address {
   margin-bottom: 9px;
+
   color: var(--secondary-text-color);
+
   font-style: normal;
 }
 .contacts.lower > .item:first-child {
@@ -637,13 +699,15 @@ svg {
   color: var(--accent-color);
 }
 .welcome-text {
+  margin-bottom: 20px;
+
+  color: var(--secondary-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-text-color);
-  margin-bottom: 20px;
 }
 .icon-footer-list {
   display: flex;
@@ -654,6 +718,7 @@ svg {
 }
 .icon-footer-link {
   background-color: var(--icons-bacground-footer);
+
   transition: background-color 250ms var(--timing-func);
 }
 .icon-footer-link:hover,
