@@ -365,6 +365,12 @@ svg {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  transition: background-color 250ms var(--timing-func);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--button-accent-background-color);
 }
 .subscribe-icon {
   fill: currentColor;
