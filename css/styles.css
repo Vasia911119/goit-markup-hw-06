@@ -286,6 +286,7 @@ svg {
   border-radius: 4px;
 }
 .form-checkbox {
+  padding-left: 12px;
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
