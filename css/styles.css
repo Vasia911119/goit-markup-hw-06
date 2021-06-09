@@ -271,8 +271,8 @@ svg {
 }
 .form-field ::placeholder {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.01em;
 
   color: var(--placeholder-text-color);
